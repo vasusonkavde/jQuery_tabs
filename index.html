@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="container1">
+            <div class="c1r1 clearfix">
+                <div class="c1r1b1 left">
+                   <b>Textify</b>  <p class="toptext">&nbsp;Because Text Messaging Rocks</p>
+                </div>
+
+                <div class="c1r1b2 right">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <div class="c1r2b1">
+               <h1>(212) 555-1234</h1>
+            </div>
+
+            <div class="c1r3b1">
+               <span>What is this number?</span>
+            </div>
+            <div class="sc1r4">
+                <div class="sc1r1 clearfix">
+                    <div class="sc1r1b1 left">
+                            <span>To:</span>
+                    </div>
+                    <div class="sc1r1b2 left">
+                         <select id="sel">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                         </select>
+                    </div>
+                    <div class="sc1r1b3 left">
+                        <span> &laquo; Phone number or name</span>
+                    </div>
+                </div>
+
+                <div class="sc1r2 clearfix">
+                    <div class="sc1r2b1 sc1r1b1 left">
+                        <span>Message:</span>
+                    </div>
+
+                    <div class="sc1col2r2 left">
+                        <div class="sc1col2r2b1">
+                       
+                        </div>
+
+                        <div class="sc1col2r3b1">
+                            <h4 class="line">Attach a photo to this text message</h4>
+                        </div>
+
+                        <div class="sc1col2r4b1 left">
+                           <h3 id="text">Send Text Message</h3>
+                        </div>
+                        <div class="sc1col2r4b2 left">
+                            <span>Or, <u> schedule it for later delivery</u></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="c1r5lastrows clearfix">
+                <div class="navitem left">
+                    <button class="links active " id="recent_convo">Recent conversation</button>
+                    <button class="links " id="all-convo">All conversation</button>   
+                    <button class="links " id="photos">Photos</button>
+                </div>
+                <div class="nav-item-password right ">
+                     <span > change password</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+             
+        </div>
+
+
+          <div class="container3">
+            <div class="out1 left">
+                <span>Textify © 2011</span>
+            </div>
+            <div class="out2 right">
+                <span>All text messaging data on this site is ketp 100% secure - read our security policy.</span>
+            </div>
+         </div>
+    </div>
+        
+        
+    <script
+     src="https://code.jquery.com/jquery-3.6.3.min.js"
+     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+     crossorigin="anonymous"></script>
+        
+        <script>
+            $(document).ready(function() {
+                $('button').click(function() {
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+            });
+        </script>
+     
+    <script src="index.js"></script>
+  
+</body>
+
+</html>
